@@ -106,6 +106,8 @@ public class MainActivity extends AppCompatActivity {
                     ActivityCompat.requestPermissions(MainActivity.this,new String[]{Manifest.permission.POST_NOTIFICATIONS},1);
                 }
 
+            }else {
+                compat.notify(NOTIFICATION_ID,builder.build());
             }
 
 
